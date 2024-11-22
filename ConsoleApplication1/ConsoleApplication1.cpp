@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cmath>
 #include <stdio.h>
+#include < cstdio >
 using namespace std;
 
 
@@ -21,23 +22,27 @@ static int calc()
 	cin >> sign;
 
 	if (sign == "*")
-		cout << a * b << endl;
+		cout << a * b << "\n";
 	else if (sign == "/")
-		cout << a / b << endl;
+		cout << a / b << "\n";
 	else if (sign == "%")
-		cout << a % b << endl;
+		cout << a % b << "\n";
 	else if (sign == "+")
-		cout << a + b << endl;
+		cout << a + b << "\n";
 	else if (sign == "-")
-		cout << a + b << endl;
+		cout << a + b << "\n";
 	else if (sign != "-" || sign != "/" || sign != "%" || sign != "+" || sign != "-")
 		cout << "invalid" << endl;
 
-	cout << "Made with <3 by flash";
-	return false;
+	cout << "Made with <3 by flash\n";
+	cout << "Press any key to continue..";
+	getchar();
+	return true;
 }
 
 int main()
 {
 	calc();
+	getchar();
+	return true;
 }
